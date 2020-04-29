@@ -1,0 +1,117 @@
+/* jobs */
+.job,
+.detail {
+    width: 99%;
+    background: var(--bg-color);
+    border-radius: 3px;
+    color: #d3d4dc;
+    padding: 20px;
+    margin-bottom: 28px;
+    box-shadow: var(--box-shadow);
+}
+
+.job ul,
+.detail li {
+    list-style: none;
+    display: flex;
+    margin-top: 35px;
+    margin-left: -6px;
+}
+
+.job li, 
+.detail li {
+    margin-right: 8px;
+    padding: 5px;
+}
+
+.job .technology span,
+.detail .technology span {
+    color: #fff;
+}
+
+.job p{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.detail p{
+    white-space: none; 
+    text-overflow: none; 
+}
+
+/* Form */
+.form-wrap {
+    margin: auto;
+    background: var(--bg-color);
+    color: #fff;
+    padding: 14px 50px 50px;
+    margin-top: 25px;
+    box-shadow: var(--box-shadow);
+    border-radius: 3px;
+}
+
+.form-wrap.reg-form,
+.form-wrap.login-form {
+    width: 60%;
+}
+
+.form-wrap h1,
+.form-wrap h2,
+.form-wrap p {
+    text-align: center;
+}
+
+.form-wrap .btn {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #686775;
+    outline: none;
+}
+
+.form-wrap .btn:hover {
+   background-color: #585763;
+}
+
+.form-wrap .btn:active {
+    transition: 0.1s;
+    box-shadow: inset 1px 1px 4px #3b394c;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    width: 100%;
+    outline: none;
+    margin-bottom: 18px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 100;
+    text-indent: 5px;
+    background-color: #e6e3e3;
+    padding: 10px 5px 10px 10px;
+    color: #2b4258;
+    box-shadow: var(--box-shadow);
+}
+
+h3.title_addForm{
+    text-align: center;
+}
+
+.error {
+    padding: 0px;
+    border: #333 solid 1px;
+    margin-bottom: 15px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    text-align: center;
+    color: #e43b3b;
+  }
+  

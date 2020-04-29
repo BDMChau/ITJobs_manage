@@ -1,0 +1,42 @@
+<section>
+  <div class="form-wrap">
+    <h3 class="title_addForm">ADD NEW RECRUITMENT NEWS</h3>
+
+    <%if(locals.errors){ %>
+    <% errors.forEach((err) => { %>
+    <div class="error">
+      <p><%= err %></p>
+    </div>
+    <% }) %>
+    <% } %>
+
+    <form action="/jobs/add" method="POST">
+      <div class="input-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" class="input-box" value="<%= locals.values ? values.title : '' %>"
+          placeholder="Job title..." maxlength="100">
+      </div>
+      <div class="input-group">
+        <label for="technology">Technologies neded</label>
+        <input type="text" name="technology" id="technology" class="input-box"
+          value="<%= locals.values ? values.technology : '' %>" placeholder="Technologies neded..." maxlength="100">
+      </div>
+      <div class="input-group">
+        <label for="budget">Budget (Optional)</label>
+        <input type="number" name="budget" id="budget" class="input-box"
+          value="<%= locals.values ? values.budget : '' %>" placeholder="$...">
+      </div>
+      <div class="input-group">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" class="input-box" placeholder="Description details..."
+          rows="10"><%= locals.values ? values.description : '' %></textarea>
+      </div>
+      <div class="input-group">
+        <label for="budget">Contact Email</label>
+        <input type="email" name="email" id="email" class="input-box" value="<%= locals.values ? values.email : '' %>"
+          placeholder="Contact email...">
+      </div>
+      <input type="submit" value="Add" class="btn btn-reverse">
+    </form>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<section>
+  <h1>Job details</h1>
+  <% job.forEach((job) => { %>
+  <div class="detail">
+    <h3><%= job.title %></h3>
+    <p>Description: <%= job.description %></p>
+    <ul>
+      <li><b>Budget:</b>&nbsp<%= job.budget %></li>
+    </ul>
+    <div class="tech">
+      <small>Technologies: <%= job.technology %><span></span></small>
+    </div>
+    <br>
+    <div class="email">
+      <small><b>Email contact:</b> <%= job.email %><span></span></small>
+    </div>
+  </div>
+  <%})%>
+
+
+</section>

@@ -1,0 +1,31 @@
+.btn {
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  transition: ease-in-out 0.5s;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: var(--primary-hover-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-detail {
+  background: var(--bg-color);
+  border: none;
+  color: #ffffffad;
+}
+
+.btn-detail:hover {
+  background: var(--primary-hover-color);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-detail:active {
+  transition: 0.1s;
+  box-shadow: inset 1px 1px 4px #3b394c;
+}

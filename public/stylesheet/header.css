@@ -1,0 +1,40 @@
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #d3d4dc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover-color);
+  transition: 0.4s;
+}
+
+header {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin: 0;
+  padding: 20px 15px;  
+}
+
+

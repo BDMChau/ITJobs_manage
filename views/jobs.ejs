@@ -1,0 +1,17 @@
+<section>
+  <h1>All Jobs</h1>
+  <% jobs.forEach((job) => { %>
+  <div class="job">
+    <h3><%= job.title %></h3>
+    <p><%= job.description %></p>
+    <ul>
+      <li><b>Budget:</b>&nbsp <%= job.budget %></li>
+      <a href="/jobs/<%= job.id %>" class="btn btn-detail">Detail</a>
+    </ul>
+    <div class="technology">
+      <small>Technologies:<span>&nbsp <%= job.technology %></span></small>
+    </div>
+  </div>
+  <% }) %>
+
+</section>
